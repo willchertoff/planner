@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Places</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 2 4 0 4 10 0 12"></polygon>
+        <polygon id="path-2" points="4 2 8 0 8 10 4 12"></polygon>
+        <polygon id="path-3" points="8 2 12 0 12 10 8 12"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="SketchAppSources.com---Planner-Dashboard" transform="translate(-121.000000, -320.000000)">
+            <g id="Dashboard" transform="translate(87.000000, 96.000000)">
+                <g id="Sidebar" transform="translate(34.000000, 104.000000)">
+                    <g id="Places" transform="translate(1.000000, 121.000000)">
+                        <g id="Rectangle-37">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <path stroke="#BFC7CD" stroke-width="1" d="M-0.223606798,1.5527864 L-0.5,1.69098301 L-0.5,2 L-0.5,12 L-0.5,12.809017 L0.223606798,12.4472136 L4.2236068,10.4472136 L4.5,10.309017 L4.5,10 L4.5,0 L4.5,-0.809016994 L3.7763932,-0.447213595 L-0.223606798,1.5527864 Z"></path>
+                        </g>
+                        <g id="Rectangle-37-Copy-2" transform="translate(6.000000, 6.000000) scale(-1, 1) translate(-6.000000, -6.000000) ">
+                            <use fill="#E7EEF2" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <path stroke="#BFC7CD" stroke-width="1" d="M3.7763932,1.5527864 L3.5,1.69098301 L3.5,2 L3.5,12 L3.5,12.809017 L4.2236068,12.4472136 L8.2236068,10.4472136 L8.5,10.309017 L8.5,10 L8.5,0 L8.5,-0.809016994 L7.7763932,-0.447213595 L3.7763932,1.5527864 Z"></path>
+                        </g>
+                        <g id="Rectangle-37-Copy">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <path stroke="#BFC7CD" stroke-width="1" d="M7.7763932,1.5527864 L7.5,1.69098301 L7.5,2 L7.5,12 L7.5,12.809017 L8.2236068,12.4472136 L12.2236068,10.4472136 L12.5,10.309017 L12.5,10 L12.5,0 L12.5,-0.809016994 L11.7763932,-0.447213595 L7.7763932,1.5527864 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

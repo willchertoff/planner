@@ -1,0 +1,12 @@
+.root {
+  border-right: 1px solid rgba(151,151,151,0.40);
+  height: 100%;
+  width: 225px;
+}
+
+.logo {
+  height: 59px;
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}

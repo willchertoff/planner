@@ -1,18 +1,39 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React, { PropTypes } from 'react';
 import cx from 'classnames';
-import Header from './Header';
-import Footer from '../Footer';
 import s from './Layout.css';
+
+/* Components */
+import SideBar from '../SideBar';
+
+
+const links = [
+  {
+    title: 'Home',
+    icon: 'Home',
+    path: '/home',
+  },
+  {
+    title: 'My Trip',
+    icon: 'Trip',
+    path: '/',
+  },
+  {
+    title: 'Discover Places',
+    icon: 'Places',
+    path: '/map',
+  },
+  {
+    title: 'Notifications',
+    icon: 'Notif',
+    path: '/notifications',
+  },
+  {
+    title: 'Settings',
+    icon: 'Settings',
+    path: '/settings',
+  },
+];
+
 
 class Layout extends React.Component {
 
@@ -31,11 +52,10 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="mdl-layout mdl-js-layout" ref={node => (this.root = node)}>
-        <div className="mdl-layout__inner-container">
-          <Header />
-          <main className="mdl-layout__content">
-            <div {...this.props} className={cx(s.content, this.props.className)} />
-            <Footer />
+        <div className={cx(s.inner, 'mdl-layout__inner-container')}>
+          <main className={s.main}>
+            <SideBar links={links} />
+            <div {...this.props} className={this.props.className} />
           </main>
         </div>
       </div>

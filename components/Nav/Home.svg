@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SketchAppSources.com---Planner-Dashboard" transform="translate(-122.000000, -199.000000)">
+            <g id="Dashboard" transform="translate(87.000000, 96.000000)">
+                <g id="Sidebar" transform="translate(34.000000, 104.000000)">
+                    <g id="Home" transform="translate(2.000000, 0.000000)">
+                        <rect id="Rectangle-38" fill="#E7EEF2" x="3" y="7" width="4" height="6" rx="1"></rect>
+                        <path d="M-0.306066021,3.47517381 L-0.5,3.6253001 L-0.5,3.87055159 L-0.5,12 L-0.5,12.5 L0,12.5 L10,12.5 L10.5,12.5 L10.5,12 L10.5,3.87055159 L10.5,3.6253001 L10.306066,3.47517381 L5.30606602,-0.395377782 L5,-0.632306647 L4.69393398,-0.395377782 L-0.306066021,3.47517381 Z" id="Rectangle-37" stroke="#BFC7CD" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <rect id="Rectangle-22" fill="#BFC7CD" x="0" y="4" width="10" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Trip</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="2" width="12" height="8"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SketchAppSources.com---Planner-Dashboard" transform="translate(-121.000000, -261.000000)">
+            <g id="Dashboard" transform="translate(87.000000, 96.000000)">
+                <g id="Sidebar" transform="translate(34.000000, 104.000000)">
+                    <g id="Trip" transform="translate(1.000000, 62.000000)">
+                        <rect id="Rectangle-17-Copy" stroke="#BFC7CD" stroke-linecap="round" stroke-linejoin="round" x="3.5" y="-0.5" width="5" height="5"></rect>
+                        <g id="Rectangle-17" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#BFC7CD" stroke-width="1" x="-0.5" y="1.5" width="13" height="9"></rect>
+                        </g>
+                        <rect id="Rectangle-38" fill="#E7EEF2" x="2" y="2" width="1" height="8"></rect>
+                        <rect id="Rectangle-38-Copy" fill="#E7EEF2" x="9" y="2" width="1" height="8"></rect>
+                        <rect id="Rectangle-21" fill="#BFC7CD" x="8" y="5" width="3" height="1"></rect>
+                        <rect id="Rectangle-21-Copy" fill="#BFC7CD" x="1" y="5" width="3" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

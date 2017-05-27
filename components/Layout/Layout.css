@@ -1,15 +1,28 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 .content {
   margin: 0 auto;
-  max-width: 1000px;
   width: 100%;
+}
+
+.inner {
+  background-image: linear-gradient(-169deg, #F4EBE5 0%, #E3D4CA 99%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 694px;
+  width: 1033px;
+  background: #FFFFFF;
+  border-radius: 7px;
+  box-shadow: 22px 32px 34px 0 rgba(0,0,0,0.06);
+  display: flex;
 }

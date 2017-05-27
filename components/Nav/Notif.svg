@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Notif</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.877801009" y="0" width="8.24439798" height="8.93527579"></rect>
+        <polygon id="path-2" points="0 3.87055159 5 6 10 3.87055159 10 10 0 10"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SketchAppSources.com---Planner-Dashboard" transform="translate(-122.000000, -381.000000)">
+            <g id="Dashboard" transform="translate(87.000000, 96.000000)">
+                <g id="Sidebar" transform="translate(34.000000, 104.000000)">
+                    <g id="Notif" transform="translate(2.000000, 182.000000)">
+                        <g id="Rectangle-37-Copy-3" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="#E7EEF2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#BFC7CD" stroke-width="1" x="0.377801009" y="-0.5" width="9.24439798" height="9.93527579"></rect>
+                        </g>
+                        <g id="Rectangle-37" stroke-linecap="round" stroke-linejoin="round">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <path stroke="#BFC7CD" stroke-width="1" d="M5,5.45654301 L0.19591692,3.41053359 L-0.5,3.11414975 L-0.5,3.87055159 L-0.5,10 L-0.5,10.5 L0,10.5 L10,10.5 L10.5,10.5 L10.5,10 L10.5,3.87055159 L10.5,3.11414975 L9.80408308,3.41053359 L5,5.45654301 Z"></path>
+                        </g>
+                        <rect id="Rectangle-28" fill="#FFFFFF" x="2" y="1" width="5" height="1" rx="0.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
