@@ -12,6 +12,10 @@
   color: #C0C3C9;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: #6A778B;
+  }
 }
 .selected {
   color: #6A778B;
