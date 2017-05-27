@@ -20,9 +20,9 @@ html {
 
 .main {
   height: 694px;
-  width: 1033px;
-  background: #FFFFFF;
+  width: 1034px;
+  background: #FEFEFE;
   border-radius: 7px;
   box-shadow: 22px 32px 34px 0 rgba(0,0,0,0.06);
-  display: flex;
+  position: relative;
 }

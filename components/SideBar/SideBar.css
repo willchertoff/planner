@@ -1,7 +1,9 @@
 .root {
-  border-right: 1px solid rgba(151,151,151,0.40);
   height: 100%;
   width: 225px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .logo {

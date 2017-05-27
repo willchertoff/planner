@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>New plan</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="3" width="11" height="11"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SketchAppSources.com---Planner-Dashboard" transform="translate(-681.000000, -118.000000)">
+            <g id="Dashboard" transform="translate(87.000000, 96.000000)">
+                <g id="New-plan" transform="translate(595.000000, 22.000000)">
+                    <g id="Rectangle-30" stroke-linecap="round" stroke-linejoin="round">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#BFC7CD" stroke-width="1" x="-0.5" y="2.5" width="12" height="12"></rect>
+                    </g>
+                    <rect id="Rectangle-30-Copy" fill="#FFFFFF" x="4" y="2" width="8" height="8"></rect>
+                    <path d="M11,3 L11,0 L10,0 L10,3 L7,3 L7,4 L10,4 L10,7 L11,7 L11,4 L14,4 L14,3 L11,3 Z" id="Rectangle-31" fill="#BFC7CD"></path>
+                    <polygon id="Rectangle-34" fill="#E7EEF2" points="2 6 7 6 7 7 4.74861654 7 2 7"></polygon>
+                    <rect id="Rectangle-34-Copy" fill="#E7EEF2" x="2" y="9" width="3" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+.content {
+  position: absolute;
+  left: 225px;
+  top: 0;
+  width: calc(100% - 622px);
+  min-width: 410px;
+  border-right: 1px solid rgba(151,151,151,0.25);
+  z-index: 9;
+  height: 100%;
+  border-left: 1px solid rgba(151,151,151,0.25);
+}
+.container {
+  min-width: 410px;
+  width: 100%;
+  border-bottom: 1px solid rgba(151,151,151,0.25);
+  height: 59px;
+  display: flex;
+}
+.input {
+  min-width: 344px;
+  height: 100%;
+  width: calc(100% - 66px);
+}
+.button {
+  width: 66px;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  border-left: 1px solid rgba(151,151,151,0.25);
+  transition: background .4s ease;
+  &:hover {
+    cursor: pointer;
+    background: #f7f1f1;
+  }
+}
