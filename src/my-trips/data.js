@@ -6,7 +6,7 @@ import mark from './mark.png';
 
 export default [
   {
-    id: 0,
+    id: 1,
     title: 'Team holiday Trip to The Jewel of Java',
     location: 'Kulon Progo',
     date: '15 May - 23 May 2016',
@@ -34,7 +34,7 @@ export default [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: 'Investors Meetup - Bromo',
     location: 'Bromo',
     date: '15 May - 23 May 2016',
@@ -57,7 +57,7 @@ export default [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Team Meeting with Medscape',
     location: 'Kulon Progo',
     date: '15 May - 23 May 2016',
@@ -85,7 +85,7 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'WebMD Investor Meetup',
     location: 'Bromo',
     date: '15 May - 23 May 2016',
@@ -108,7 +108,7 @@ export default [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Team holiday Trip to The Jewel of Java',
     location: 'Kulon Progo',
     date: '15 May - 23 May 2016',
@@ -136,7 +136,7 @@ export default [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Front End Workshop',
     location: 'Bromo',
     date: '15 May - 23 May 2016',
@@ -159,7 +159,7 @@ export default [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Team Meeting with Medscape',
     location: 'Kulon Progo',
     date: '15 May - 23 May 2016',
@@ -187,7 +187,7 @@ export default [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: 'Sanguin Project Meeting',
     location: 'Bromo',
     date: '15 May - 23 May 2016',

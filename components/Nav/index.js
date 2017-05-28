@@ -13,7 +13,7 @@ import Trip from './Trip.svg';
 import Link from '../Link';
 
 const location = window.location.pathname;
-const activeLinkClass = (path, loc) => path === loc ? s.selected : '';
+const activeLinkClass = (path, loc) => loc.includes(path) ? s.selected : '';
 
 export default () =>
   <div className={s.root}>
@@ -23,8 +23,8 @@ export default () =>
         <span>Home</span>
       </div>
     </Link>
-    <Link to={'/'}>
-      <div className={cx(s.link, activeLinkClass('/', location))}>
+    <Link to={'/trips/1'}>
+      <div className={cx(s.link, activeLinkClass('/trips', location))}>
         <img className={s.icon} src={Trip} alt="icon" />
         <span>My Trips</span>
       </div>

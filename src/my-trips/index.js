@@ -21,29 +21,33 @@ const search = (term, dat) =>
   );
 
 /* DataPresentation */
-const renderTrips = trps =>
+const renderTrips = (trps, active) =>
   trps.map(trip =>
     <Card
+      id={trip.id}
+      active={trip.id === active}
       key={trip.id}
       title={trip.title}
       dates={trip.date}
       people={trip.people}
     />,
   );
+
 /* eslint-disable no-confusing-arrow */
 const curriedRenderTrips = finder =>
   emptyString(finder) ? (
     group =>
-      renderTrips(group)
+      renderTrips(group.trips, group.active)
   ) : (
     group =>
-      renderTrips(search(finder, group))
+      renderTrips(search(finder, group.trips), group.active)
   );
 
 class MyTrip extends Component {
 
   static propTypes = {
     trips: PropTypes.arrayOf(PropTypes.object),
+    route: PropTypes.objectOf(PropTypes.any),
   }
 
   static defaultProps = {
@@ -65,6 +69,15 @@ class MyTrip extends Component {
   }
 
   render() {
+    const { route } = this.props;
+    const { params } = route;
+    const { id } = params;
+
+    const cardData = {
+      trips: this.state.trips,
+      active: parseInt(id, 0),
+    };
+
     return (
       <Layout className={s.content}>
         <div className={s.container} >
@@ -82,7 +95,7 @@ class MyTrip extends Component {
         </div>
         <div className={s.cards}>
           {
-            curriedRenderTrips(this.state.searchTerm)(this.state.trips)
+            curriedRenderTrips(this.state.searchTerm)(cardData)
           }
         </div>
       </Layout>

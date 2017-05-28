@@ -34,3 +34,7 @@
   margin-right: 10px;
   height: 31px;
 }
+
+.active {
+  background: #F5F8F7;
+}

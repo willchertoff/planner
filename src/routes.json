@@ -1,6 +1,6 @@
 [
   {
-    "path": "/",
+    "path": "/trips/:id",
     "page": "./my-trips",
     "chunk": "main"
   },
