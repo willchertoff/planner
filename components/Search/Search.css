@@ -1,15 +1,16 @@
 .root {
   border: 0;
   /* Search..: */
-  font-family: ProximaNova-Light;
+  font-family: 'proxima-nova';
+  font-weight: 100;
   font-size: 11px;
   letter-spacing: 2.4px;
   padding: 0 40px;
   outline: none;
   color: #C0C3C9;
   &::-webkit-input-placeholder {
-    /* Placeholder Search..: */
-    font-family: ProximaNova-Light;
+    font-family: 'proxima-nova';
+    font-weight: 100;
     font-size: 11px;
     color: #C0C3C9;
     letter-spacing: 2.54px;
