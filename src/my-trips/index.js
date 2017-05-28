@@ -5,47 +5,40 @@ import s from './styles.css';
 /* Components */
 import Search from '../../components/Search';
 import Button from '../../components/Button';
+import Card from '../../components/Card';
 
 /* Icons */
 import newPlanIcon from './new-plan-icon.svg';
 
-
 /* Data */
-import jack from './jack.png';
-import jason from './jason.png';
-import john from './john.png';
-import mark from './mark.png';
+import data from './data';
 
-const trips = [
-  {
-    id: 0,
-    title: 'Team holiday Trip to The Jewel of Java',
-    location: 'Kulon Progo',
-    date: '15 May - 23 May 2016',
-    peaople: [
-      {
-        id: 0,
-        name: 'John',
-        image: john,
-      },
-      {
-        id: 2,
-        name: 'Jack',
-        image: jack,
-      },
-      {
-        id: 3,
-        name: 'Jason',
-        image: jason,
-      },
-      {
-        id: 4,
-        name: 'Mark',
-        image: mark,
-      },
-    ],
-  },
-];
+/* Helpers */
+const emptyString = str => str.length === 0;
+const search = (term, dat) =>
+  dat.filter(d =>
+    d.title.toLowerCase().indexOf(term.toLowerCase()) !== -1,
+  );
+
+/* DataPresentation */
+const renderTrips = trps =>
+  trps.map(trip =>
+    <Card
+      key={trip.id}
+      title={trip.title}
+      dates={trip.date}
+      people={trip.people}
+    />,
+  );
+/* eslint-disable no-confusing-arrow */
+const curriedRenderTrips = finder =>
+  emptyString(finder) ? (
+    group =>
+      renderTrips(group)
+  ) : (
+    group =>
+      renderTrips(search(finder, group))
+  );
 
 class MyTrip extends Component {
 
@@ -54,14 +47,21 @@ class MyTrip extends Component {
   }
 
   static defaultProps = {
-    trips,
+    trips: data,
   }
 
   constructor(props) {
     super(props);
     this.state = {
       trips: props.trips,
+      searchTerm: '',
     };
+  }
+
+  onSearch = (e) => {
+    this.setState({
+      searchTerm: e.target.value,
+    });
   }
 
   render() {
@@ -71,12 +71,19 @@ class MyTrip extends Component {
           <Search
             placeholder="Search.."
             className={s.input}
+            onChange={this.onSearch}
+            value={this.state.searchTerm}
           />
           <Button
             className={s.button}
           >
             <img src={newPlanIcon} alt="new plan icon" />
           </Button>
+        </div>
+        <div className={s.cards}>
+          {
+            curriedRenderTrips(this.state.searchTerm)(this.state.trips)
+          }
         </div>
       </Layout>
     );

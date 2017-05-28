@@ -33,3 +33,7 @@
     background: #f7f1f1;
   }
 }
+.cards {
+  overflow: scroll;
+  height: calc(100% - 59px);
+}
