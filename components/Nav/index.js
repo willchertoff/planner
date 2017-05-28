@@ -17,7 +17,7 @@ const activeLinkClass = (path, loc) => loc.includes(path) ? s.selected : '';
 
 export default () =>
   <div className={s.root}>
-    <Link to={'/home'}>
+    <Link to={'/trips/1'}>
       <div className={cx(s.link, activeLinkClass('/home', location))}>
         <img className={s.icon} src={Home} alt="icon" />
         <span>Home</span>
@@ -29,19 +29,19 @@ export default () =>
         <span>My Trips</span>
       </div>
     </Link>
-    <Link to={'/discover'}>
+    <Link to={'/trips/1'}>
       <div className={cx(s.link, activeLinkClass('/discover', location))}>
         <img className={s.icon} src={Places} alt="icon" />
         <span>Discover Places</span>
       </div>
     </Link>
-    <Link to={'/notifications'}>
+    <Link to={'/trips/1'}>
       <div className={cx(s.link, activeLinkClass('/notifications', location))}>
         <img className={s.icon} src={Notif} alt="icon" />
         <span>Notifications</span>
       </div>
     </Link>
-    <Link to={'/settings'}>
+    <Link to={'/trips/1'}>
       <div className={cx(s.link, activeLinkClass('/settings', location))}>
         <img className={s.icon} src={Settings} alt="icon" />
         <span>Settings</span>

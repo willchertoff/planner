@@ -6,7 +6,7 @@ import s from './Detail.css';
 import Button from '../Button';
 import Ovals from '../Ovals';
 
-const Detail = (props) =>
+const Detail = props =>
   <div
     className={s.root}
   >
@@ -19,6 +19,15 @@ const Detail = (props) =>
         <Ovals fill="white" />
       </Button>
     </div>
+    <div className={s.children}>
+      {props.children}
+    </div>
   </div>;
+
+Detail.propTypes = {
+  children: PropTypes.node,
+  location: PropTypes.string,
+  temp: PropTypes.string,
+};
 
 export default Detail;

@@ -7,6 +7,7 @@ import Search from '../../components/Search';
 import Button from '../../components/Button';
 import Card from '../../components/Card';
 import Detail from '../../components/Detail';
+import Task from '../../components/Task';
 
 /* Icons */
 import newPlanIcon from './new-plan-icon.svg';
@@ -32,6 +33,14 @@ const renderTrips = (trps, active) =>
       dates={trip.date}
       people={trip.people}
     />,
+  );
+const renderTasks = (tasks, cb) =>
+  tasks.map(t =>
+    <Task
+      onChange={cb}
+      className={s.task}
+      title={'Task'}
+    />
   );
 
 /* eslint-disable no-confusing-arrow */
@@ -63,6 +72,10 @@ class MyTrip extends Component {
     };
   }
 
+  toggleTask = (e) => {
+    console.log('toggling task');
+  }
+
   onSearch = (e) => {
     this.setState({
       searchTerm: e.target.value,
@@ -80,6 +93,8 @@ class MyTrip extends Component {
     };
 
     const currentTrip = this.state.trips[id];
+
+    const { tasks } = currentTrip;
 
     return (
       <Layout>
@@ -105,11 +120,10 @@ class MyTrip extends Component {
         </div>
         <div className={s.detail}>
           <Detail
-            tasks={currentTrip.tasks}
             location={currentTrip.location}
             temp={currentTrip.temp}
-            messages={currentTrip.discussion}
-          />
+          >
+          </Detail>
         </div>
       </Layout>
     );

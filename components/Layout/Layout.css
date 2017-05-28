@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -12,8 +13,19 @@ body {
   margin: 0;
 }
 
+h1,h2,h3 {
+  margin: 0;
+}
 div {
   height: 100%;
+}
+
+h3 {
+  font-family: 'proxima-nova';
+  font-weight: 100;
+  font-size: 11px;
+  color: #5F6876;
+  letter-spacing: 2.2px;
 }
 
 .content {
@@ -36,7 +48,7 @@ div {
   box-shadow: 22px 32px 34px 0 rgba(0,0,0,0.06);
   position: relative;
   overflow: hidden;
-  @media (max-width: 1100px) {
+  @media (min-width: 1100px) {
     height: 550px;
   }
 }

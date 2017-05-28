@@ -11,6 +11,6 @@
 module.exports = {
   title: 'Planner',        // Your website title
   url: 'https://planner.co',          // Your website URL
-  project: 'react-static-boilerplate',      // Firebase project. See README.md -> How to Deploy
+  project: 'planner-8967f',      // Firebase project. See README.md -> How to Deploy
   trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
 };

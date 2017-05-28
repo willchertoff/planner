@@ -37,10 +37,22 @@
   overflow: scroll;
   height: calc(100% - 59px);
 }
-
 .detail {
   position: absolute;
   right: 0;
   top: 0;
   min-width: 397px;
+}
+.meta {
+  position: absolute;
+  top: 240px;
+  padding: 0 45px;
+  width: 100%;
+}
+.title {
+  display: flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
 }
