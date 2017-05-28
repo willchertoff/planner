@@ -38,3 +38,11 @@
 .active {
   background: #F5F8F7;
 }
+
+.menu {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: 0;
+  background: none;
+}

@@ -37,3 +37,10 @@
   overflow: scroll;
   height: calc(100% - 59px);
 }
+
+.detail {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 397px;
+}

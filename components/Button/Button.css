@@ -1,3 +1,6 @@
 .root {
   outline: none;
+  &:hover {
+    cursor: pointer;
+  }
 }

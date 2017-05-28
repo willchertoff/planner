@@ -4,6 +4,8 @@ import s from './Card.css';
 
 /* Components */
 import Link from '../Link';
+import Ovals from '../Ovals';
+import Button from '../Button';
 
 const Card = props => (
   <Link to={`/trips/${props.id}`}>
@@ -25,6 +27,9 @@ const Card = props => (
             )
           }
         </div>
+        <Button className={s.menu}>
+          <Ovals fill="#C0C3C9" />
+        </Button>
       </div>
     </div>
   </Link>

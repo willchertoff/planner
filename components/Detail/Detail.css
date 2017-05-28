@@ -1,0 +1,55 @@
+.root {
+  background-image: url('./bg.svg');
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.location {
+  font-family: 'proxima-nova';
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 2.36px;
+  display: block;
+}
+
+.temp {
+  font-family: 'proxima-nova';
+  font-size: 36px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+  margin-top: 6px;
+}
+.cels {
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 2.7px;
+  vertical-align: super;
+}
+
+.button {
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 42px;
+  height: 25px;
+  background: rgba(153, 195, 194, 0.32);
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: rgba(153, 195, 194, 0.42);
+    cursor: pointer;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}

@@ -8,7 +8,19 @@ export default [
   {
     id: 1,
     title: 'Team holiday Trip to The Jewel of Java',
-    location: 'Kulon Progo',
+    location: 'Bromo, Indonesia',
+    temp: '21',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
@@ -35,8 +47,20 @@ export default [
   },
   {
     id: 2,
-    title: 'Investors Meetup - Bromo',
-    location: 'Bromo',
+    title: 'Investors Meetup - Kansas',
+    location: 'Kansas City, Kansas',
+    temp: '25',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
@@ -59,7 +83,19 @@ export default [
   {
     id: 3,
     title: 'Team Meeting with Medscape',
-    location: 'Kulon Progo',
+    location: 'Kulon, Progo',
+    temp: '32',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
@@ -87,7 +123,19 @@ export default [
   {
     id: 4,
     title: 'WebMD Investor Meetup',
-    location: 'Bromo',
+    location: 'New York City, New York',
+    temp: '18',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
@@ -109,8 +157,20 @@ export default [
   },
   {
     id: 5,
-    title: 'Team holiday Trip to The Jewel of Java',
-    location: 'Kulon Progo',
+    title: 'Team holiday Trip to The Jewel of Jafa',
+    location: 'Jafa, Israel',
+    temp: '35',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
@@ -138,7 +198,19 @@ export default [
   {
     id: 6,
     title: 'Front End Workshop',
-    location: 'Bromo',
+    location: 'Berlin, Germany',
+    temp: '24',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
@@ -161,7 +233,19 @@ export default [
   {
     id: 7,
     title: 'Team Meeting with Medscape',
-    location: 'Kulon Progo',
+    location: 'New York City, New York',
+    temp: '29',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
@@ -189,7 +273,19 @@ export default [
   {
     id: 8,
     title: 'Sanguin Project Meeting',
-    location: 'Bromo',
+    location: 'Chicago, Illinois',
+    temp: '22',
+    tasks: [
+      { id: 0, text: 'Prepare for Sound' },
+      { id: 1, text: 'Book a resturant' },
+      { id: 2, text: 'Book 24 hotel rooms' },
+    ],
+    discussion: [
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+      { id: 0, text: 'Can anyone help with the meeting?' },
+    ],
     date: '15 May - 23 May 2016',
     people: [
       {
