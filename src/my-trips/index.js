@@ -37,7 +37,7 @@ const renderTrips = (trps, active) =>
   );
 
 /* eslint-disable no-confusing-arrow */
-const curriedRenderTrips = finder =>
+const searchAndRenderTrips = finder =>
   emptyString(finder) ? (
     group =>
       renderTrips(group.trips, group.active)
@@ -94,7 +94,7 @@ class MyTrip extends Component {
           <Loader color="#F4EBE5" size="12px" margin="4px" />
         </div>
       ) : (
-        curriedRenderTrips(this.state.searchTerm)(cardData)
+        searchAndRenderTrips(this.state.searchTerm)(cardData)
       );
 
     const renderDetail = () =>
@@ -123,15 +123,11 @@ class MyTrip extends Component {
             </Button>
           </div>
           <div className={s.cards}>
-            {
-              renderCardContent()
-            }
+            {renderCardContent()}
           </div>
         </div>
         <div className={s.detail}>
-          {
-            renderDetail()
-          }
+          {renderDetail()}
         </div>
       </Layout>
     );

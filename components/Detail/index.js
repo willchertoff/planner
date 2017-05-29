@@ -1,15 +1,18 @@
 import React, { PropTypes } from 'react';
-import cx from 'classnames';
 import s from './Detail.css';
 
 /* Components */
 import Button from '../Button';
 import Ovals from '../Ovals';
 
+/* Assets */
+import bg from './bg.svg';
+
 const Detail = props =>
   <div
     className={s.root}
   >
+    <img src={bg} className={s.bg} alt="decoration" />
     <div className={s.title}>
       <span className={s.location}>{props.location}</span>
       <span className={s.temp}>{props.temp}<span className={s.cels}>C</span></span>

@@ -8,6 +8,9 @@
   z-index: 9;
   height: 100%;
   border-left: 1px solid rgba(151,151,151,0.25);
+  @media (max-width: 1034px) {
+    display: none;
+  }
 }
 .container {
   min-width: 410px;
@@ -43,6 +46,9 @@
   top: 0;
   min-width: 397px;
   height: 100%;
+  @media (max-width: 1034px) {
+    width: calc(100% - 225px);
+  }
 }
 .meta {
   position: absolute;
