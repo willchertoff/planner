@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import Loader from 'halogen/PulseLoader';
+
 import Layout from '../../components/Layout';
 import s from './styles.css';
 
@@ -7,13 +9,12 @@ import Search from '../../components/Search';
 import Button from '../../components/Button';
 import Card from '../../components/Card';
 import Detail from '../../components/Detail';
-import Task from '../../components/Task';
 
 /* Icons */
 import newPlanIcon from './new-plan-icon.svg';
 
 /* Data */
-import data from './data';
+import firebase from './data';
 
 /* Helpers */
 const emptyString = str => str.length === 0;
@@ -34,14 +35,6 @@ const renderTrips = (trps, active) =>
       people={trip.people}
     />,
   );
-const renderTasks = (tasks, cb) =>
-  tasks.map(t =>
-    <Task
-      onChange={cb}
-      className={s.task}
-      title={'Task'}
-    />
-  );
 
 /* eslint-disable no-confusing-arrow */
 const curriedRenderTrips = finder =>
@@ -54,31 +47,32 @@ const curriedRenderTrips = finder =>
   );
 
 class MyTrip extends Component {
-
   static propTypes = {
-    trips: PropTypes.arrayOf(PropTypes.object),
     route: PropTypes.objectOf(PropTypes.any),
   }
-
-  static defaultProps = {
-    trips: data,
-  }
-
   constructor(props) {
     super(props);
     this.state = {
-      trips: props.trips,
       searchTerm: '',
+      trips: [],
     };
   }
-
-  toggleTask = (e) => {
-    console.log('toggling task');
+  componentWillMount = () => {
+    this.tripsRef = firebase.database().ref('/trips/');
+    this.tripsRef.on('child_added', (data) => {
+      this.setState({
+        trips: this.state.trips.concat(data.val()),
+      });
+    });
   }
-
   onSearch = (e) => {
     this.setState({
       searchTerm: e.target.value,
+    });
+  }
+  updateData = (data) => {
+    this.setState({
+      trips: data,
     });
   }
 
@@ -94,8 +88,24 @@ class MyTrip extends Component {
 
     const currentTrip = this.state.trips[id - 1];
 
-    const { tasks } = currentTrip;
+    const renderCardContent = () =>
+      this.state.trips.length === 0 ? (
+        <div className={s.loader}>
+          <Loader color="#F4EBE5" size="12px" margin="4px" />
+        </div>
+      ) : (
+        curriedRenderTrips(this.state.searchTerm)(cardData)
+      );
 
+    const renderDetail = () =>
+      this.state.trips.length === 0 ? (
+        ''
+      ) : (
+        <Detail
+          location={currentTrip.location}
+          temp={currentTrip.temp}
+        />
+      );
     return (
       <Layout>
         <div className={s.content}>
@@ -114,16 +124,14 @@ class MyTrip extends Component {
           </div>
           <div className={s.cards}>
             {
-              curriedRenderTrips(this.state.searchTerm)(cardData)
+              renderCardContent()
             }
           </div>
         </div>
         <div className={s.detail}>
-          <Detail
-            location={currentTrip.location}
-            temp={currentTrip.temp}
-          >
-          </Detail>
+          {
+            renderDetail()
+          }
         </div>
       </Layout>
     );

@@ -51,7 +51,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className="mdl-layout mdl-js-layout" ref={node => (this.root = node)}>
+      <div className={cx(s.layout, 'mdl-layout mdl-js-layout')} ref={node => (this.root = node)}>
         <div className={cx(s.inner, 'mdl-layout__inner-container')}>
           <main className={s.main}>
             <SideBar links={links} />

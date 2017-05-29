@@ -6,6 +6,7 @@ import s from './Card.css';
 import Link from '../Link';
 import Ovals from '../Ovals';
 import Button from '../Button';
+import Image from '../Image';
 
 const Card = props => (
   <Link to={`/trips/${props.id}`}>
@@ -18,10 +19,10 @@ const Card = props => (
           <span className={s.dates} >{props.dates}</span>
           {
             props.people.map(people =>
-              <img
+              <Image
                 key={people.name}
                 className={s.image}
-                src={people.image}
+                path={`${people.name.toLowerCase()}.png`}
                 alt={`${people.name}'s' headshot`}
               />,
             )
