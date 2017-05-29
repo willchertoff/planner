@@ -92,7 +92,7 @@ class MyTrip extends Component {
       active: parseInt(id, 0),
     };
 
-    const currentTrip = this.state.trips[id];
+    const currentTrip = this.state.trips[id - 1];
 
     const { tasks } = currentTrip;
 
