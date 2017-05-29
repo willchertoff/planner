@@ -9,7 +9,7 @@
   height: 100%;
   border-left: 1px solid rgba(151,151,151,0.25);
   @media (max-width: 1034px) {
-    display: none;
+    width: calc(100% - 225px);
   }
 }
 .container {
@@ -47,7 +47,7 @@
   min-width: 397px;
   height: 100%;
   @media (max-width: 1034px) {
-    width: calc(100% - 225px);
+    display: none;
   }
 }
 .meta {
