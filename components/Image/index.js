@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import cx from 'classnames';
-import firebase from '../../src/my-trips/data';
+import firebase from '../../src/database';
 
 /* Setup Firebase Grab */
 const storage = firebase.storage();
@@ -44,7 +43,6 @@ class Image extends Component {
         src={this.state.src}
         style={{
           opacity: this.state.loaded ? 1 : 0,
-          transition: 'opacity .4s ease',
         }}
       />
     );

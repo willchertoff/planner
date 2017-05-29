@@ -1,3 +1,4 @@
+/* eslint-disable no-confusing-arrow */
 import React, { Component, PropTypes } from 'react';
 import Loader from 'halogen/PulseLoader';
 
@@ -7,44 +8,19 @@ import s from './styles.css';
 /* Components */
 import Search from '../../components/Search';
 import Button from '../../components/Button';
-import Card from '../../components/Card';
 import Detail from '../../components/Detail';
 
 /* Icons */
 import newPlanIcon from './new-plan-icon.svg';
 
 /* Data */
-import firebase from './data';
+import firebase from '../database';
 
 /* Helpers */
-const emptyString = str => str.length === 0;
-const search = (term, dat) =>
-  dat.filter(d =>
-    d.title.toLowerCase().indexOf(term.toLowerCase()) !== -1,
-  );
 
-/* DataPresentation */
-const renderTrips = (trps, active) =>
-  trps.map(trip =>
-    <Card
-      id={trip.id}
-      active={trip.id === active}
-      key={trip.id}
-      title={trip.title}
-      dates={trip.date}
-      people={trip.people}
-    />,
-  );
-
-/* eslint-disable no-confusing-arrow */
-const searchAndRenderTrips = finder =>
-  emptyString(finder) ? (
-    group =>
-      renderTrips(group.trips, group.active)
-  ) : (
-    group =>
-      renderTrips(search(finder, group.trips), group.active)
-  );
+import {
+  searchAndRenderTrips,
+} from './helpers';
 
 class MyTrip extends Component {
   static propTypes = {
