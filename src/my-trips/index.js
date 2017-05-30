@@ -62,8 +62,6 @@ class MyTrip extends Component {
       active: parseInt(id, 0),
     };
 
-    const currentTrip = this.state.trips[id - 1];
-
     const renderCardContent = () =>
       this.state.trips.length === 0 ? (
         <div className={s.loader}>
@@ -73,15 +71,6 @@ class MyTrip extends Component {
         searchAndRenderTrips(this.state.searchTerm)(cardData)
       );
 
-    const renderDetail = () =>
-      this.state.trips.length === 0 ? (
-        ''
-      ) : (
-        <Detail
-          location={currentTrip.location}
-          temp={currentTrip.temp}
-        />
-      );
     return (
       <Layout>
         <div className={s.content}>
@@ -103,7 +92,10 @@ class MyTrip extends Component {
           </div>
         </div>
         <div className={s.detail}>
-          {renderDetail()}
+          <Detail
+            trips={this.state.trips}
+            activeTrip={id}
+          />
         </div>
       </Layout>
     );

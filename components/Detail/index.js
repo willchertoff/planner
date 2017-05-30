@@ -8,29 +8,48 @@ import Ovals from '../Ovals';
 /* Assets */
 import bg from './bg.svg';
 
-const Detail = props =>
-  <div
-    className={s.root}
-  >
-    <img src={bg} className={s.bg} alt="decoration" />
-    <div className={s.title}>
-      <span className={s.location}>{props.location}</span>
-      <span className={s.temp}>{props.temp}<span className={s.cels}>C</span></span>
+const Detail = (props) => {
+  const {
+    trips,
+    activeTrip,
+  } = props;
+  const trip = trips.length > 0 ? (
+    trips[activeTrip - 1]
+  ) : (
+    null
+  );
+
+  return (
+    <div
+      className={s.root}
+    >
+      <img src={bg} className={s.bg} alt="decoration" />
+      {
+        trip ? (
+          <div className={s.title}>
+            <span className={s.location}>{trip.location}</span>
+            <span className={s.temp}>{trip.temp}<span className={s.cels}>C</span></span>
+          </div>
+        ) : (
+          ''
+        )
+      }
+      <div className={s.menu}>
+        <Button className={s.button}>
+          <Ovals fill="white" />
+        </Button>
+      </div>
+      <div className={s.children}>
+        {props.children}
+      </div>
     </div>
-    <div className={s.menu}>
-      <Button className={s.button}>
-        <Ovals fill="white" />
-      </Button>
-    </div>
-    <div className={s.children}>
-      {props.children}
-    </div>
-  </div>;
+  );
+};
 
 Detail.propTypes = {
   children: PropTypes.node,
-  location: PropTypes.string,
-  temp: PropTypes.string,
+  trips: PropTypes.arrayOf(PropTypes.object),
+  activeTrip: PropTypes.number,
 };
 
 export default Detail;
