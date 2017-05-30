@@ -1,0 +1,27 @@
+.root {
+  padding: 35px 0;
+  position: relative;
+}
+.bar {
+  margin-top: 35px;
+}
+.prog {
+  transition: width .4s ease;
+}
+.label {
+  background: #A8DFDB;
+  box-shadow: 2px 4px 12px 0 rgba(172,199,198,0.56);
+  border-radius: 80px;
+  color: white;
+  position: absolute;
+  width: 42px;
+  height: 25px;
+  top: 82px;
+  font-family: 'proxima-nova';
+  font-size: 10px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left .4s ease;
+}

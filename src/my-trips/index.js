@@ -10,6 +10,7 @@ import Search from '../../components/Search';
 import Button from '../../components/Button';
 import Detail from '../../components/Detail';
 import Discussion from '../../components/Discussion';
+import ProgressBar from '../../components/ProgressBar';
 import Tasks from './tasks';
 
 /* Icons */
@@ -37,9 +38,13 @@ class MyTrip extends Component {
   }
   componentWillMount = () => {
     this.tripsRef = firebase.database().ref('/trips/');
-    this.tripsRef.on('child_added', (data) => {
+    this.tripsRef.once('value', (data) => {
+      const tmps = [];
+      data.forEach((d) => {
+        tmps.push(d.val());
+      });
       this.setState({
-        trips: this.state.trips.concat(data.val()),
+        trips: tmps,
       });
     });
   }
@@ -106,10 +111,16 @@ class MyTrip extends Component {
               />
               {
                 this.state.trips.length > 0 ? (
-                  <Discussion
-                    title="Discussion"
-                    unread={this.state.trips[id - 1].discussion.length}
-                  />
+                  <div>
+                    <Discussion
+                      title="Discussion"
+                      unread={this.state.trips[id - 1].discussion.length}
+                    />
+                    <ProgressBar
+                      title="Progress"
+                      activeTrip={parseInt(id, 0)}
+                    />
+                  </div>
                 ) : ('')
               }
             </div>
