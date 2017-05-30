@@ -9,6 +9,7 @@ import s from './styles.css';
 import Search from '../../components/Search';
 import Button from '../../components/Button';
 import Detail from '../../components/Detail';
+import Tasks from './tasks';
 
 /* Icons */
 import newPlanIcon from './new-plan-icon.svg';
@@ -40,6 +41,9 @@ class MyTrip extends Component {
         trips: this.state.trips.concat(data.val()),
       });
     });
+  }
+  componentWillUnmount = () => {
+    this.tripsRef.off();
   }
   onSearch = (e) => {
     this.setState({
@@ -94,8 +98,12 @@ class MyTrip extends Component {
         <div className={s.detail}>
           <Detail
             trips={this.state.trips}
-            activeTrip={id}
-          />
+            activeTrip={parseInt(id, 0)}
+          >
+            <Tasks
+              activeTrip={parseInt(id, 0)}
+            />
+          </Detail>
         </div>
       </Layout>
     );

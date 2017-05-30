@@ -39,9 +39,7 @@ const Detail = (props) => {
           <Ovals fill="white" />
         </Button>
       </div>
-      <div className={s.children}>
-        {props.children}
-      </div>
+      {props.children}
     </div>
   );
 };

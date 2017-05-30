@@ -1,0 +1,30 @@
+.root {
+  position: absolute;
+  top: 250px;
+  padding: 20px 32px;
+  width: 100%;
+}
+.tasks {
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(151,151,151,0.20);
+}
+.label:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.input {
+  margin-right: 15px;
+  -webkit-appearance: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.input::before {
+  content: url('./checkbox.svg');
+  height: 11px;
+  width: 11px;
+  vertical-align: middle;
+}
+.input:checked::before {
+  content: url('./checkbox-checked.svg');
+}
