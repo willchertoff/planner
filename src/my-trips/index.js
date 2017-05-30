@@ -9,6 +9,7 @@ import s from './styles.css';
 import Search from '../../components/Search';
 import Button from '../../components/Button';
 import Detail from '../../components/Detail';
+import Discussion from '../../components/Discussion';
 import Tasks from './tasks';
 
 /* Icons */
@@ -74,7 +75,6 @@ class MyTrip extends Component {
       ) : (
         searchAndRenderTrips(this.state.searchTerm)(cardData)
       );
-
     return (
       <Layout>
         <div className={s.content}>
@@ -100,9 +100,19 @@ class MyTrip extends Component {
             trips={this.state.trips}
             activeTrip={parseInt(id, 0)}
           >
-            <Tasks
-              activeTrip={parseInt(id, 0)}
-            />
+            <div className={s.meta}>
+              <Tasks
+                activeTrip={parseInt(id, 0)}
+              />
+              {
+                this.state.trips.length > 0 ? (
+                  <Discussion
+                    title="Discussion"
+                    unread={this.state.trips[id - 1].discussion.length}
+                  />
+                ) : ('')
+              }
+            </div>
           </Detail>
         </div>
       </Layout>

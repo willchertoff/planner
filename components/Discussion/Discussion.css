@@ -1,0 +1,7 @@
+.root {
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(151,151,151,0.20);
+}
+.unread {
+  color: #C0C5CD;
+}
