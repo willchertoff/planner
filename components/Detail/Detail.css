@@ -43,9 +43,8 @@
   height: 25px;
   background: rgba(153, 195, 194, 0.32);
   border-radius: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  position: relative;
   &:hover {
     background: rgba(153, 195, 194, 0.42);
     cursor: pointer;

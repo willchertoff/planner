@@ -1,7 +1,8 @@
 import React from 'react';
+import s from './Ovals.css';
 
 export default props =>
-  <svg width="15px" height="3px" viewBox="0 0 15 3" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <svg width="15px" className={s.oval} height="5px" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="SketchAppSources.com---Planner-Dashboard" transform="translate(-688.000000, -372.000000)" fill={props.fill}>
         <g id="Dashboard" transform="translate(87.000000, 96.000000)">

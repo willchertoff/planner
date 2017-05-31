@@ -46,7 +46,6 @@ class ProgressBar extends Component {
     });
   }
   componentWillReceiveProps = (nextProps) => {
-    this.tasksRef.off();
     this.tasksRef = firebase.database().ref(`/trips/${nextProps.activeTrip - 1}/tasks`);
     this.tasksRef.on('child_changed', () => {
       this.tasksRef.once('value', (snapshot) => {

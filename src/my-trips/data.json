@@ -1,0 +1,250 @@
+{
+  "trips": [
+   {
+    "id": 1,
+    "title": "Team holiday Trip to The Jewel of Java",
+    "location": "Bromo, Indonesia",
+    "temp": "21",
+    "tasks": [
+     {
+      "id": 0,
+      "text": "Prepare for Sound",
+      "completed": true
+     },
+     {
+      "id": 1,
+      "text": "Book a resturant",
+      "completed": false
+     },
+     {
+      "id": 2,
+      "text": "Book 24 hotel rooms",
+      "completed": false
+     }
+    ],
+    "discussion": [
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     }
+    ],
+    "date": "15 May - 23 May 2016",
+    "people": [
+     {
+      "id": 1,
+      "name": "John",
+      "image": "gs://planner-8967f.appspot.com/john.png"
+     },
+     {
+      "id": 2,
+      "name": "Jack",
+      "image": "gs://planner-8967f.appspot.com/jack.png"
+     },
+     {
+      "id": 3,
+      "name": "Jason",
+      "image": "gs://planner-8967f.appspot.com/jason.png"
+     },
+     {
+      "id": 4,
+      "name": "Mark",
+      "image": "gs://planner-8967f.appspot.com/mark.png"
+     }
+    ]
+   },
+   {
+    "id": 2,
+    "title": "Investors Meetup - New York",
+    "location": "NYC, New York",
+    "temp": "25",
+    "tasks": [
+     {
+      "id": 0,
+      "text": "Prepare for Sound",
+      "completed": false
+     },
+     {
+      "id": 1,
+      "text": "Book a resturant",
+      "completed": false
+     },
+     {
+      "id": 2,
+      "text": "Book 24 hotel rooms",
+      "completed": false
+     }
+    ],
+    "discussion": [
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     }
+    ],
+    "date": "15 May - 23 May 2016",
+    "people": [
+     {
+      "id": 1,
+      "name": "John",
+      "image": "gs://planner-8967f.appspot.com/john.png"
+     },
+     {
+      "id": 2,
+      "name": "Jack",
+      "image": "gs://planner-8967f.appspot.com/jack.png"
+     },
+     {
+      "id": 3,
+      "name": "Jason",
+      "image": "gs://planner-8967f.appspot.com/jason.png"
+     }
+    ]
+   },
+   {
+    "id": 3,
+    "title": "Team Meeting with Google - Progo",
+    "location": "Kulon, Progo",
+    "temp": "32",
+    "tasks": [
+     {
+      "id": 0,
+      "text": "Prepare for Sound",
+      "completed": false
+     },
+     {
+      "id": 1,
+      "text": "Book a resturant",
+      "completed": true
+     },
+     {
+      "id": 2,
+      "text": "Book 24 hotel rooms",
+      "completed": false
+     }
+    ],
+    "discussion": [
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     }
+    ],
+    "date": "15 May - 23 May 2016",
+    "people": [
+     {
+      "id": 1,
+      "name": "John",
+      "image": "gs://planner-8967f.appspot.com/john.png"
+     },
+     {
+      "id": 2,
+      "name": "Jack",
+      "image": "gs://planner-8967f.appspot.com/jack.png"
+     },
+     {
+      "id": 3,
+      "name": "Jason",
+      "image": "gs://planner-8967f.appspot.com/jason.png"
+     },
+     {
+      "id": 4,
+      "name": "Mark",
+      "image": "gs://planner-8967f.appspot.com/mark.png"
+     }
+    ]
+   },
+   {
+    "id": 4,
+    "title": "Youtube Investor Meetup - New York",
+    "location": "NYC, New York",
+    "temp": "18",
+    "tasks": [
+     {
+      "id": 0,
+      "text": "Prepare for Sound",
+      "completed": true
+     },
+     {
+      "id": 1,
+      "text": "Book a resturant",
+      "completed": false
+     },
+     {
+      "id": 2,
+      "text": "Book 24 hotel rooms",
+      "completed": false
+     }
+    ],
+    "discussion": [
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     },
+     {
+      "id": 0,
+      "text": "Can anyone help with the meeting?"
+     }
+    ],
+    "date": "15 May - 23 May 2016",
+    "people": [
+     {
+      "id": 1,
+      "name": "John",
+      "image": "gs://planner-8967f.appspot.com/john.png"
+     },
+     {
+      "id": 2,
+      "name": "Jack",
+      "image": "gs://planner-8967f.appspot.com/jack.png"
+     },
+     {
+      "id": 3,
+      "name": "Jason",
+      "image": "gs://planner-8967f.appspot.com/jason.png"
+     }
+    ]
+   }
+  ]
+}
