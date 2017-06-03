@@ -6,55 +6,18 @@ import s from './Layout.css';
 import SideBar from '../SideBar';
 
 
-const links = [
-  {
-    title: 'Home',
-    icon: 'Home',
-    path: '/home',
-  },
-  {
-    title: 'My Trip',
-    icon: 'Trip',
-    path: '/',
-  },
-  {
-    title: 'Discover Places',
-    icon: 'Places',
-    path: '/map',
-  },
-  {
-    title: 'Notifications',
-    icon: 'Notif',
-    path: '/notifications',
-  },
-  {
-    title: 'Settings',
-    icon: 'Settings',
-    path: '/settings',
-  },
-];
-
-
 class Layout extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
   };
 
-  componentDidMount() {
-    // window.componentHandler.upgradeElement(this.root);
-  }
-
-  componentWillUnmount() {
-    // window.componentHandler.downgradeElements(this.root);
-  }
-
   render() {
     return (
       <div className={cx(s.layout, 'mdl-layout mdl-js-layout')} ref={node => (this.root = node)}>
         <div className={cx(s.inner, 'mdl-layout__inner-container')}>
           <main className={s.main}>
-            <SideBar links={links} />
+            <SideBar />
             <div {...this.props} className={this.props.className} />
           </main>
         </div>
