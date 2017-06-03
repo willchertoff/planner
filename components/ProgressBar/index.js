@@ -46,10 +46,9 @@ class ProgressBar extends Component {
     });
   }
   componentWillReceiveProps = (nextProps) => {
-    this.tasksRef.off();
-    this.tasksRef = firebase.database().ref(`/trips/${nextProps.activeTrip - 1}/tasks`);
-    this.tasksRef.on('child_changed', () => {
-      this.tasksRef.once('value', (snapshot) => {
+    this.tasksProgressRef = firebase.database().ref(`/trips/${nextProps.activeTrip - 1}/tasks`);
+    this.tasksProgressRef.on('child_changed', () => {
+      this.tasksProgressRef.once('value', (snapshot) => {
         const tsks = [];
         snapshot.forEach((snap) => {
           tsks.push(snap.val());
@@ -59,7 +58,7 @@ class ProgressBar extends Component {
         });
       });
     });
-    this.tasksRef.once('value', (snapshot) => {
+    this.tasksProgressRef.once('value', (snapshot) => {
       const tsks = [];
       snapshot.forEach((snap) => {
         tsks.push(snap.val());
@@ -70,7 +69,7 @@ class ProgressBar extends Component {
     });
   }
   componentWillUnmount = () => {
-    this.tasksRef.off();
+    this.tasksProgressRef.off();
   }
 
   render() {
